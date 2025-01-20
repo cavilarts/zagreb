@@ -1,17 +1,21 @@
+{% load static %}
 <!DOCTYPE>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tours</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}"
   </head>
   <body>
     <h1>Tours Schedule for June 2025</h1>
+    <img src="{% static 'img/colombia.jpg' %}" width="200" heigth="300" alt="Colombia">
     <ul>
       {% for tour in tours %}
       <li>{{tour}}</li>
       {% endfor %}
     </ul>
+    <script src="{% static 'js/index.js' %}"></script>
   </body>
 </html>
 
